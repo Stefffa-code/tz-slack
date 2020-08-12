@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slack</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+  <link href="lib/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="top-nav">
+      <div class="top-nav__history">
+        <div class="history-i icon">
+          <i class="fa fa-clock-o" aria-hidden="true"></i>
+        </div>
+        
+      </div>
+
+      <div class="top-nav__search">
+        <input type="text" placeholder="Search Ais" name="search">
+        <div class="search-i icon">
+          <i class="fa fa-search" ></i></input>
+        </div>        
+      </div>
+
+      <div class="top-nav__help ">
+        <div class="help-i icon">
+          <i class="fa fa-question-circle-o" aria-hidden="true"></i>
+        </div>        
+      </div>
+    </div>
+
+    <div class="workspace">
+
+      <aside>
+        <div class="aside-top">
+          <div class="aside-top__names">
+            <div class="group-name">
+              <span>Ais</span>
+              <div class="chevron-i icon">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </div>              
+            </div>
+            <div class="user-name">
+              <div class="status"></div>
+              <span>Irina Pulyak</span>
+            </div>
+          </div>
+          <div class="aside-top__compose">
+            <div class="compose-i icon">
+              <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </div>            
+          </div>          
+        </div>
+        <div class="aside__kit-list">
+
+          <div class="aside__kit-item">
+            <div class="commenting-i icon">
+              <i class="fa fa-commenting-o" aria-hidden="true"></i>
+            </div>
+            <span>Threads</span>
+          </div>
+
+          <div class="aside__kit-item">
+            <div class="at-i icon">
+              <i class="fa fa-at" aria-hidden="true"></i>
+            </div>
+            <span>Mentions & reactions</span>
+          </div>
+
+          <div class="aside__kit-item">
+            <div class="at-i icon">
+              <i class="fa fa-at" aria-hidden="true"></i>
+            </div>
+            <span>Drafts</span>
+          </div>
+
+          <div class="aside__kit-item">
+            <div class="users-i icon">
+              <i class="fa fa-address-book-o" aria-hidden="true"></i>
+            </div>
+            <span>People & user groups</span>
+          </div>
+
+          <div class="aside__kit-item">
+            <div class="th-i icon">
+              <i class="fa fa-th" aria-hidden="true"></i>
+            </div>
+            <span>Apps</span>
+          </div>
+
+          <div class="aside__kit-item">
+            <div class="arrow-up-i icon">
+              <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            </div>
+            <span>Show less</span>
+          </div>
+
+          <hr class="aside__line"/>
+
+          <div class="aside__kit-group">
+
+            <div class="aside__kit-group-name">
+              <div>
+                <div class="down-i icon">
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+                <span>Channels</span>
+              </div>
+              <div class="plus-i icon">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="aside__kit-item">              
+              <span># general</span>
+            </div>
+            <div class="aside__kit-item">
+              <span># questions</span>
+            </div>
+            <div class="aside__kit-item">
+              <span># random</span>
+            </div>
+            <div class="aside__kit-item">
+              <span>#  task1</span>
+            </div>
+            <div class="aside__kit-item">
+              <div class="lock-i icon">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div>
+              <span>task2</span>
+            </div>
+          </div>
+
+          <div class="aside__kit-group">
+
+            <div class="aside__kit-group-name">
+              <div>
+                <div class="down-i icon">
+                  <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+                <span>Direct message</span>
+              </div>
+              <div class="plus-i icon">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+              </div>            
+            </div>   
+            <div class="aside__kit-item">
+              <div class="status"></div>
+              <span>Slackbot</span>
+              <div class="close-i icon">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="aside__kit-item">
+              <div class="status"></div>                
+              <span>Irina Pulyak (you)</span>
+              <div class="close-i icon">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+            </div>
+            <div class="aside__kit-item">
+              <span>+ Invite people</span>
+              <div class="close-i icon">
+                <i class="fa fa-times" aria-hidden="true"></i>
+              </div>
+            </div> 
+
+          </div>  
+          
+        </div>
+
+      </aside>
+  
+
+      <section>
+        <div class="head">
+          <div>
+            <div class="head__channel-title">
+              <div class="lock-i icon">
+                <i class="fa fa-lock" aria-hidden="true"></i>
+              </div> 
+              <span>Task2</span>
+              <div class="star-i icon">
+                <i class="fa fa-star-o" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="head__channel-info">
+              <div class="user-i icon">
+                <i class="fa fa-user-o" aria-hidden="true"></i>
+              </div> 
+              <span>292</span>
+              <span class="vert-line">|</span>
+              <div class="pinned-i icon">
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+              </div> 
+              <span class="txt"> 2</span>
+              <span class="vert-line">|</span>
+              <span>Add a topic</span>
+            </div>
+            
+          </div>
+          <div>
+            <div class="info-i icon">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </div>
+            <span>Details</span>
+          </div>
+        </div>
+
+        <div class="chat-scroller">
+          <div class="date-line">
+            <div class="date">
+              Yesterday
+            </div>              
+          </div>
+
+          <div class="chat-item">
+            <div class="chat__user-img">
+              <img src="./img/bird-1.jpg">
+            </div>
+            <div class="chat-item__right">            
+              <div class="chat__message">
+                <div class="chat__message-head">
+                  <span class="chat__user-name">Рэд</span>
+                  <span class="chat__time">1:25 PM</span>
+                </div>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+              </div>
+              
+              <div class="chat__replies">
+                <div class="chat__user-replay">
+                  <img src="./img/bird-1.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-2.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-3.jpg">
+                </div>
+                <span class="chat__replies-count">9 replies</span>
+                <div class="chat__last-replay">
+                  <span >Last reply 4 days ago </span>
+                </div>
+                
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="chat-item">
+            <div class="chat__user-img">
+              <img src="./img/bird-2.jpg">
+            </div>
+
+            <div class="chat-item__right">            
+              <div class="chat__message">
+                <div class="chat__message-head">
+                  <span class="chat__user-name">Чак</span>
+                  <span class="chat__time">5:23 PM</span>
+                </div>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+              </div>
+              
+              <div class="chat__replies">
+                <div class="chat__user-replay">
+                  <img src="./img/bird-4.png">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-3.jpg">
+                </div>
+                <span class="chat__replies-count">105 replies</span>
+                <div class="chat__last-replay">
+                  <span >Last reply 6 days ago </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-item">
+            <div class="chat__user-img">
+              <img src="./img/swin-1.jpg">
+            </div>
+
+            <div class="chat-item__right">            
+              <div class="chat__message">
+                <div class="chat__message-head">
+                  <span class="chat__user-name">Свин Леонард</span>
+                  <span class="chat__time">7:23 PM</span>
+                </div>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+              </div>
+              
+              <div class="chat__replies">
+                <div class="chat__user-replay">
+                  <img src="./img/bird-4.png">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-3.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-1.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-2.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/swin-1.jpg">
+                </div>
+                <span class="chat__replies-count">2005 replies</span>
+                <div class="chat__last-replay">
+                  <span >Last reply 5 days ago </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="date-line">
+            <div class="date">
+              Today
+            </div>              
+          </div>
+
+          <div class="chat-item">
+            <div class="chat__user-img">
+              <img src="./img/bird-1.jpg">
+            </div>
+            <div class="chat-item__right">            
+              <div class="chat__message">
+                <div class="chat__message-head">
+                  <span class="chat__user-name">Рэд</span>
+                  <span class="chat__time">1:25 PM</span>
+                </div>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+              </div>
+              
+              <div class="chat__replies">
+                <div class="chat__user-replay">
+                  <img src="./img/bird-1.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-2.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-3.jpg">
+                </div>
+                <span class="chat__replies-count">9 replies</span>
+                <div class="chat__last-replay">
+                  <span >Last reply 3 days ago </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-item">
+            <div class="chat__user-img">
+              <img src="./img/bird-2.jpg">
+            </div>
+
+            <div class="chat-item__right">            
+              <div class="chat__message">
+                <div class="chat__message-head">
+                  <span class="chat__user-name">Чак</span>
+                  <span class="chat__time">5:23 PM</span>
+                </div>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+              </div>
+              
+              <div class="chat__replies">
+                <div class="chat__user-replay">
+                  <img src="./img/bird-4.png">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-3.jpg">
+                </div>
+                <span class="chat__replies-count">105 replies</span>
+                <div class="chat__last-replay">
+                  <span >Last reply 3 days ago </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-item">
+            <div class="chat__user-img">
+              <img src="./img/swin-1.jpg">
+            </div>
+
+            <div class="chat-item__right">            
+              <div class="chat__message">
+                <div class="chat__message-head">
+                  <span class="chat__user-name">Свин Леонард</span>
+                  <span class="chat__time">7:23 PM</span>
+                </div>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+              </div>
+              
+              <div class="chat__replies">
+                <div class="chat__user-replay">
+                  <img src="./img/bird-4.png">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-3.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-1.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-2.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/swin-1.jpg">
+                </div>
+                <span class="chat__replies-count">2005 replies</span>
+                <div class="chat__last-replay">
+                  <span >Last reply 2 days ago </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-item">
+            <div class="chat__user-img">
+              <img src="./img/bird-1.jpg">
+            </div>
+            <div class="chat-item__right">            
+              <div class="chat__message">
+                <div class="chat__message-head">
+                  <span class="chat__user-name">Рэд</span>
+                  <span class="chat__time">1:25 PM</span>
+                </div>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+              </div>
+              
+              <div class="chat__replies">
+                <div class="chat__user-replay">
+                  <img src="./img/bird-1.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-2.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-3.jpg">
+                </div>
+                <span class="chat__replies-count">9 replies</span>
+                <div class="chat__last-replay">
+                  <span >Last reply 1 days ago </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-item">
+            <div class="chat__user-img">
+              <img src="./img/bird-2.jpg">
+            </div>
+
+            <div class="chat-item__right">            
+              <div class="chat__message">
+                <div class="chat__message-head">
+                  <span class="chat__user-name">Чак</span>
+                  <span class="chat__time">5:23 PM</span>
+                </div>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+              </div>
+              
+              <div class="chat__replies">
+                <div class="chat__user-replay">
+                  <img src="./img/bird-4.png">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-3.jpg">
+                </div>
+                <span class="chat__replies-count">105 replies</span>
+                <div class="chat__last-replay">
+                  <span >Last reply 1 days ago </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-item">
+            <div class="chat__user-img">
+              <img src="./img/swin-1.jpg">
+            </div>
+
+            <div class="chat-item__right">            
+              <div class="chat__message">
+                <div class="chat__message-head">
+                  <span class="chat__user-name">Свин Леонард</span>
+                  <span class="chat__time">7:23 PM</span>
+                </div>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+                <p class="chat__message-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit accusantium eum sapiente repellat vero optio excepturi iusto repudiandae fugiat dolor. Itaque, non praesentium. Sequi ex totam iusto iure omnis officiis!</p>
+              </div>
+              
+              <div class="chat__replies">
+                <div class="chat__user-replay">
+                  <img src="./img/bird-4.png">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-3.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-1.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/bird-2.jpg">
+                </div>
+                <div class="chat__user-replay">
+                  <img src="./img/swin-1.jpg">
+                </div>
+                <span class="chat__replies-count">2005 replies</span>
+                <div class="chat__last-replay">
+                  <span >Last reply 1 days ago </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="message-wrap">
+          <div class="message">
+            <div class="message-input" contenteditable="true">
+            </div>
+
+            <div class="message-sttings">  
+
+              <div class="message-sttings__left">
+                <div class="bolt-i icon ">
+                  <i class="fa fa-bolt" aria-hidden="true"></i>
+                </div> 
+
+                <div class="more-settings">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+  
+                <div class="bold-i icon ">
+                  <i class="fa fa-bold" aria-hidden="true"></i>
+                </div> 
+  
+                <div class="italic-i icon">
+                  <i class="fa fa-italic" aria-hidden="true"></i>
+                </div> 
+  
+                <div class="code-i icon">
+                  <i class="fa fa-code" aria-hidden="true"></i>
+                </div> 
+  
+                <div class="link-i icon">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </div> 
+  
+                <div class="list-ol-i icon">
+                  <i class="fa fa-list-ol" aria-hidden="true"></i>
+                </div>
+  
+                <div class="list-ul-i icon">
+                  <i class="fa fa-list-ul" aria-hidden="true"></i>
+                </div> 
+  
+                <div class="link-i icon">
+                  <i class="fa fa-link" aria-hidden="true"></i>
+                </div> 
+  
+                <div class="file-code-i icon">
+                  <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                </div>
+              </div>
+
+              <div class="message-sttings__right">
+                <div class="font-i icon active">
+                  <i class="fa fa-font" aria-hidden="true"></i>
+                </div> 
+  
+                <div class="at-i icon">
+                  <i class="fa fa-at" aria-hidden="true"></i>
+                </div> 
+  
+                <div class="smile-i icon">
+                  <i class="fa fa-smile-o" aria-hidden="true"></i>
+                </div> 
+
+                <div class="clip-i icon">
+                  <i class="fa fa-paperclip" aria-hidden="true"></i>
+                </div> 
+  
+                <div class="send-i icon">
+                  <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                </div> 
+              </div>
+
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+    </div>    
+
+  </div>
+  
+</body>
+</html>
